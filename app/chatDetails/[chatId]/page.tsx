@@ -8,7 +8,7 @@ const ChatDetails = ({ params }: { params: { chatId: string } }) => {
 
   const handleSentimentAnalysisType = () => {
     sentimentAnalysisType == "agent"
-      ? setSentimentAnalysisType("patient")
+      ? setSentimentAnalysisType("customer")
       : setSentimentAnalysisType("agent");
   };
   return (
@@ -20,7 +20,7 @@ const ChatDetails = ({ params }: { params: { chatId: string } }) => {
         sx={{ marginY: 3 }}>
         {sentimentAnalysisType == "agent"
           ? "View Agent Sentiment Analysis"
-          : "View Patient Sentiment Analysis"}
+          : "View Customer Sentiment Analysis"}
       </Button>
       <Paper elevation={3} style={{ padding: "16px" }}>
         {chatDetails
@@ -59,12 +59,12 @@ const ChatDetails = ({ params }: { params: { chatId: string } }) => {
                   backgroundColor = "lime";
                 } else if (
                   line.includes("[Satisfied]") &&
-                  sentimentAnalysisType == "patient"
+                  sentimentAnalysisType == "customer"
                 ) {
                   backgroundColor = "lightgreen";
                 } else if (
                   line.includes("[Dissatisfied]") &&
-                  sentimentAnalysisType == "patient"
+                  sentimentAnalysisType == "customer"
                 ) {
                   backgroundColor = "lightcoral";
                 }
