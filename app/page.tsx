@@ -2,20 +2,23 @@
 
 import React from "react";
 import {
-  Container,
   List,
   ListItem,
   ListItemText,
   Typography,
+  Container,
 } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { agents } from "./consts";
 
 const AgentList = () => {
   const router = useRouter();
+
   return (
-    <>
-      <Typography variant="h4">Agent List</Typography>
+    <Container maxWidth="md" style={{ textAlign: "center", marginTop: "20px" }}>
+      <Typography variant="h4" style={{ marginTop: "20px" }}>
+        Agent List
+      </Typography>
       <List>
         {agents.map((agent: any) => (
           <ListItem
@@ -26,7 +29,7 @@ const AgentList = () => {
           </ListItem>
         ))}
       </List>
-    </>
+    </Container>
   );
 };
 
