@@ -21,11 +21,60 @@ export const chats = [
     score: 9,
   },
   {
+    id: 9,
+    agentId: 1,
+    issue: "Change Contact Details (Mobile Number)",
+    chatDate: "2023-11-02",
+    score: 8,
+  },
+  {
+    id: 10,
+    agentId: 1,
+    issue: "Enquiry regarding return of items",
+    chatDate: "2023-11-01",
+    score: 9,
+  },
+  {
     id: 3,
     agentId: 2,
     issue: "Enquiry regarding closing hours",
-    chatDate: "2023-11-01",
+    chatDate: "2023-11-11",
     score: 5,
+  },
+  {
+    id: 4,
+    agentId: 2,
+    issue: "Enquiry regarding return of items",
+    chatDate: "2023-11-11",
+    score: 6,
+  },
+  {
+    id: 5,
+    agentId: 2,
+    issue: "Enquiry regarding mobile banking",
+    chatDate: "2023-11-12",
+    score: 7,
+  },
+  {
+    id: 6,
+    agentId: 2,
+    issue: "Change Contact Details (Mobile Number)",
+    chatDate: "2023-11-13",
+    score: 6,
+  },
+  {
+    id: 7,
+    agentId: 2,
+    issue: "Change Mobile Details",
+    chatDate: "2023-11-12",
+    score: 7,
+  },
+  {
+    id: 8,
+    agentId: 2,
+    issue: "Enquiry regarding closing hours",
+    chatDate: "2023-11-13",
+    score: 6,
   },
 ];
 
@@ -146,7 +195,7 @@ export const chatDetails = [
 
       "Chat Agent: I apologize for the inconvenience you're facing. If there's anything else I can assist you with or if you have further questions, please let me know.",
 
-      "Customer: No, that's all. Thank you for your help!",
+      "[Satisfied] Customer: No, that's all. Thank you for your help!",
 
       "Chat Agent: You're welcome! If you have any more questions in the future, feel free to reach out. Have a great day!",
     ],

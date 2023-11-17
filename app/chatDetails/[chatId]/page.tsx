@@ -19,8 +19,8 @@ const ChatDetails = ({ params }: { params: { chatId: string } }) => {
         onClick={handleSentimentAnalysisType}
         sx={{ marginY: 3 }}>
         {sentimentAnalysisType == "agent"
-          ? "View Agent Sentiment Analysis"
-          : "View Customer Sentiment Analysis"}
+          ? "View Customer Sentiment Analysis"
+          : "View Agent Sentiment Analysis"}
       </Button>
       <Paper elevation={3} style={{ padding: "16px" }}>
         {chatDetails
