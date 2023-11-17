@@ -13,7 +13,9 @@ const ChatDetails = ({ params }: { params: { chatId: string } }) => {
   };
   return (
     <Container>
-      <Typography variant="h4">Chat Details </Typography>
+      <Typography variant="h4" className="mt-6">
+        Chat Details{" "}
+      </Typography>
       <Button
         variant="contained"
         onClick={handleSentimentAnalysisType}

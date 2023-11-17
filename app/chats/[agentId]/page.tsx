@@ -15,7 +15,9 @@ const Chats = ({ params }: { params: { agentId: string } }) => {
 
   return (
     <Container>
-      <Typography variant="h4">Chat</Typography>
+      <Typography variant="h4" className="mt-6">
+        Chat
+      </Typography>
       <List>
         {chats
           .filter((chat) => {
